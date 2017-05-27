@@ -1,7 +1,7 @@
 version: '2'
 services:
   openhab:
-    image: openhab/openhab
+    image: openhab/openhab:2.0.0-amd64
     network_mode: host
     volumes:
       - /etc/localtime:/etc/localtime:ro
