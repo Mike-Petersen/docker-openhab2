@@ -11,3 +11,6 @@ services:
       - /home/mike/openhab-volumes/addons:/openhab/addons
     devices:
       - /dev/ttyACM0:/dev/ttyACM0
+    tty: true
+    stdin_open: true
+    restart: always
