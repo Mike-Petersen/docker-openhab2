@@ -1,0 +1,13 @@
+version: '3'
+services:
+  openhab:
+    image: openhab/openhab
+    network_mode: host
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - /home/mike/openhab-volumes/conf:/openhab/conf
+      - /home/mike/openhab-volumes/userdata:/openhab/userdata
+      - /home/mike/openhab-volumes/addons:/openhab/addons
+    devices:
+      - /dev/ttyACM0:/dev/ttyACM0
